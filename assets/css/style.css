@@ -43,9 +43,11 @@ a:hover {
 /********* NAVIGATION BAR *********/
 
 header {  
-    position: relative;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
     padding: 0 2rem;
-    background: var(--dark-yellow);
 }
 
 .navbar {
@@ -81,13 +83,13 @@ header {
 
 .navbar .socials a #facebook {
     font-size: 1.5rem;
-    color: rgb(19, 77, 153);
+    color: rgb(120, 156, 204);
     margin-left: 0.5rem;
 }
 
 .navbar .socials a #instagram {
     font-size: 1.5rem;
-    color: rgb(175, 68, 121);
+    color: rgb(230, 112, 171);
     margin-left: 0.5rem;
 }
 
@@ -179,6 +181,7 @@ header {
 #hero .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 #hero .container .leftDiv {
@@ -188,6 +191,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+#hero .container .rightDiv {
+    width: 45%;
 }
 
 .leftDiv .welcome {
@@ -250,12 +257,29 @@ header {
     color: var(--orange);
 }
 
+/********* ABOUT SECTION *********/
+#about {
+    height: 100vh;
+    background-image: url(../images/background-2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+
+
 
 
 
 
 /********** RESPONSIVENESS STYLE *************/
 @media (max-width: 1669px) {
+    #hero .container .rightDiv {
+        width: 35%;
+    }
+
     .leftDiv .welcome {
         font-size: 2rem;
     }
@@ -297,12 +321,17 @@ header {
 
 @media (max-width: 1210px) {
 
+    #hero .container .leftDiv {
+        width: 100%;
+        padding: 3rem;
+    }
+
     .leftDiv .org_name {
-        font-size: 4rem;
+        font-size: 6rem;
     }
 
     .leftDiv .org_subname {
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .leftDiv .content {
@@ -344,11 +373,11 @@ header {
 
 @media (max-width: 694px) { 
     .leftDiv .org_name {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .leftDiv .org_subname {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
 
