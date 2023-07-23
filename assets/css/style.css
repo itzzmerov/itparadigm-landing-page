@@ -609,6 +609,10 @@ header {
         font-size: 1rem;
     }
 
+    #about {
+        overflow-x: hidden;
+    }
+
     #about .container .title {
         font-size: 2rem;
     }
@@ -618,20 +622,39 @@ header {
         color: var(--orange);
     }
 
+    #about .container .about_content {
+        align-items: center;
+    }
+
+    .about_leftDiv {
+        width: 85%;
+        justify-content: center;
+    }
+
     .about_leftDiv .about_title {
         font-size: 1.5rem;
     }
 
     .about_leftDiv {
         padding: 0;
+
     }
 
     .about_leftDiv .content {
         text-align: center;
     }
+    
+    .about_leftDiv .icons {
+        gap: 0;
+    }
 
     .about_leftDiv .button .read_btn {
-        width: 40%;
+        width: 50%;
+        font-size: 0.9rem;
+    }
+
+    .about_rightDiv {
+        width: 85%;
     }
 
     .about_rightDiv img {
