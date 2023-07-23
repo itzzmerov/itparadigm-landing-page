@@ -110,7 +110,7 @@ header {
 
 .dropdown_menu .socials a #facebook {
     font-size: 1.5rem;
-    color: rgb(19, 77, 153);
+    color: rgb(120, 156, 204);
     margin-left: 0.5rem;
 }
 
@@ -265,6 +265,8 @@ header {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #about .container {
@@ -288,21 +290,74 @@ header {
 
 #about .container .about_content {
     display: flex;
+    justify-content: center;
     margin: 3rem 0;
 }
 
 .about_leftDiv {
     width: 48%;
     height: 400px;
-    padding: 2rem;
+    padding: 0 2rem 0 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: flex-end;
 }
 
+.about_leftDiv .about_title {
+    color: var(--white);
+    font-family: var(--font-roboto);
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 0 0 4rem 0;
+}
+
+.about_leftDiv .content {
+    color: var(--white);
+    font-family: var(--font-roboto);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: right;
+    margin: 0 0 2rem 0;
+}
+
+.about_leftDiv .icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.about_leftDiv .icons img {
+    width: 75px;
+    cursor: pointer;
+}
+
+.about_leftDiv .button {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about_leftDiv .button .read_btn {
+    border: 2px solid var(--yellow);
+    padding: 1rem 2rem;
+    width: 40%;
+    border-radius: 100px;
+    color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.about_leftDiv .button .read_btn:hover {
+    background-color: var(--yellow);
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
+
 .about_rightDiv {
-    width: 45%;
+    width: 35%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -310,7 +365,7 @@ header {
 
 .about_rightDiv img {
     width: 587px;
-    height: 682px;
+    height: 660px;
 }
 
 /********* EVENTS SECTION *********/
@@ -365,6 +420,10 @@ header {
         margin-right: 1rem;
     }
 
+    .about_rightDiv img {
+        width: 500px;
+    }
+
 }
 
 @media (max-width: 1440px) {
@@ -382,6 +441,21 @@ header {
         padding: 1rem 2rem;
     }
 
+}
+
+@media (max-width: 1320px) {
+    .about_rightDiv img {
+        width: 400px;
+        height: 590px;
+    }
+
+    .about_leftDiv .about_title {
+        font-size: 2.5rem;
+    }
+
+    .about_leftDiv .button .read_btn {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 1210px) {
@@ -403,6 +477,20 @@ header {
         font-size: 1rem;
     }
 
+}
+
+@media (max-width: 1150px) {
+    .about_leftDiv .about_title {
+        font-size: 2rem;
+    }
+
+    .about_leftDiv .content {
+        font-size: 0.9rem;
+    }
+
+    .about_leftDiv .icons img {
+        width: 50px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -433,6 +521,49 @@ header {
 
     .leftDiv .content {
         font-size: 1rem;
+    }
+
+    #about {
+        height: 100%;
+    }
+
+    #about .container .subtitle {
+        color: var(--orange);
+    }
+
+    #about .container .about_content {
+        flex-direction: column-reverse;
+    }
+
+    .about_leftDiv {
+        width: 100%;
+        align-items: center;
+        padding: 3rem 5rem;
+    }
+
+    .about_leftDiv .about_title {
+        margin: 0 0 2rem 0;
+    }
+
+    .about_leftDiv .icons {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .about_leftDiv .button .read_btn {
+        width: 30%;
+    }
+
+    .about_rightDiv {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_rightDiv img {
+        width: 387px;
+        height: 460px;
     }
 }
 
@@ -476,5 +607,35 @@ header {
     .leftDiv .buttons #contact_btn {
         padding: 1rem 1rem;
         font-size: 1rem;
+    }
+
+    #about .container .title {
+        font-size: 2rem;
+    }
+
+    #about .container .subtitle {
+        font-size: 1rem;
+        color: var(--orange);
+    }
+
+    .about_leftDiv .about_title {
+        font-size: 1.5rem;
+    }
+
+    .about_leftDiv {
+        padding: 0;
+    }
+
+    .about_leftDiv .content {
+        text-align: center;
+    }
+
+    .about_leftDiv .button .read_btn {
+        width: 40%;
+    }
+
+    .about_rightDiv img {
+        width: 187px;
+        height: 260px;
     }
 }
