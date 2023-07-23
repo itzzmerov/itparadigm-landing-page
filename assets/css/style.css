@@ -22,6 +22,7 @@
 
 *body {
     font-family: var(--font-roboto);
+    scroll-behavior: smooth;
 }
 
 li {
@@ -171,7 +172,7 @@ header {
     height: 100vh;
     background-image: url(../images/background-3.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -257,12 +258,76 @@ header {
     color: var(--orange);
 }
 
-/********* ABOUT SECTION *********/
+/********* ABOUT US SECTION *********/
 #about {
     height: 100vh;
     background-image: url(../images/background-2.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#about .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+}
+
+#about .container .title {
+    color: var(--white);
+    font-family: var(--font-russo);
+    font-size: 3rem;
+}
+
+#about .container .subtitle {
+    color: var(--yellow);
+    font-family: var(--font-rock);
+    font-size: 1.3rem;
+}
+
+#about .container .about_content {
+    display: flex;
+    margin: 3rem 0;
+}
+
+.about_leftDiv {
+    width: 48%;
+    height: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about_rightDiv {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_rightDiv img {
+    width: 587px;
+    height: 682px;
+}
+
+/********* EVENTS SECTION *********/
+#events {
+    height: 100vh;
+    background-image: url(../images/background-4.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/********* CONTACT US SECTION *********/
+#contact {
+    height: 100vh;
+    background-image: url(../images/background-1.png);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
     background-size: cover;
 }
 
