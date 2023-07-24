@@ -652,6 +652,27 @@ header {
     .leftDiv .org_subname {
         font-size: 1rem;
     }
+
+    #events .container .title {
+        font-size: 2rem;
+    }
+
+    #events .container .subtitle {
+        font-size: 1rem;
+    }
+
+    #events .container .events {
+        width: 80%;
+    }
+
+    .events .event img {
+        width: 450px;
+        height: 300px;
+    }
+
+    .events .event .event_title {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 576px) { 
@@ -685,6 +706,8 @@ header {
         padding: 1rem 1rem;
         font-size: 1rem;
     }
+
+    /**** ABOUT SECTION *****/
 
     #about {
         overflow-x: hidden;
@@ -735,7 +758,25 @@ header {
     }
 
     .about_rightDiv img {
-        width: 187px;
-        height: 260px;
+        width: 250px;
+        height: 290px;
+    }
+
+    /***** EVENTS SECTION *****/
+    .events .event img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .events .event .event_title {
+        font-size: 1.3rem;
+    }
+
+    .events .event .event_desc {
+        font-size: 0.9rem;
+    }
+
+    .events .event .event_readBtn {
+        font-size: 1rem;
     }
 }
