@@ -273,6 +273,7 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     padding: 3rem 0;
 }
 
@@ -323,7 +324,7 @@ header {
 .about_leftDiv .icons {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .about_leftDiv .icons img {
@@ -365,7 +366,7 @@ header {
 
 .about_rightDiv img {
     width: 587px;
-    height: 660px;
+    height: 600px;
 }
 
 /********* EVENTS SECTION *********/
