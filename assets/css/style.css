@@ -463,9 +463,91 @@ header {
     background-size: cover;
 }
 
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#contact .container .contact_title {
+    color: var(--white);
+    font-size: 3rem;
+    font-family: var(--font-russo);
+    margin: 2rem 0 0 0;
+}
 
+#contact .container .contact_subtitle {
+    color: var(--yellow);
+    font-family: var(--font-rock);
+    font-size: 1.3rem;
+}
 
+.contact_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 4rem;
+}
+
+.contact_leftDiv {
+    flex: 1;
+}
+
+.contact_rightDiv {
+    flex: 1;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 0.8rem;
+  font-family: var(--font-roboto);
+  color: var(--white);
+}
+
+form input {
+    height: 60px;
+}
+
+form textarea {
+    height: 300px;
+}
+
+::placeholder {
+    color: var(--black);
+    opacity: 0.8;
+}
+
+form .submit_btn {
+    padding: 1rem 2rem;
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--font-roboto);
+    font-weight: 500;
+}
+
+form .submit_btn:hover {
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
 
 
 
