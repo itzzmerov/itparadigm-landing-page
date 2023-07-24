@@ -495,6 +495,39 @@ header {
     flex: 1;
 }
 
+.contact_buttons .contact_btn {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+.contact_buttons .contact_btn h3 {
+    color: var(--black);
+    display: none;
+}
+
+.contact_buttons .contact_btn:hover h3 {
+    display: block;
+}
+
+.fa-solid.fa-phone,
+.fa-solid.fa-envelope, 
+.fa-brands.fa-facebook.contact_icons, 
+.fa-brands.fa-facebook-messenger {
+    color: var(--dark-yellow);
+    font-size: 2rem;
+    background-color: var(--dark-blue);
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    margin: 1rem 0;
+}
+
 .contact_rightDiv {
     flex: 1;
 }
@@ -510,7 +543,7 @@ form textarea {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
-  border: 2px solid var(--yellow);
+  border: 2px solid var(--dark-yellow);
   border-radius: 5px;
   background-color: transparent;
   font-size: 0.8rem;
@@ -533,7 +566,7 @@ form textarea {
 
 form .submit_btn {
     padding: 1rem 2rem;
-    background-color: var(--yellow);
+    background-color: var(--dark-yellow);
     color: var(--dark-blue);
     border: none;
     border-radius: 5px;
@@ -545,8 +578,8 @@ form .submit_btn {
 
 form .submit_btn:hover {
     background: transparent;
-    border: 2px solid var(--yellow);
-    color: var(--yellow);
+    border: 2px solid var(--dark-yellow);
+    color: var(--dark-yellow);
 }
 
 
